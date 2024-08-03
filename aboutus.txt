@@ -1,0 +1,18 @@
+ update food as f set f.rate=(select avg(rate) from feedback as fb where fb.hid=f.hid)      
+
+https://www.google.com/maps/place/Sudha+Hotel/@13.0098543,76.0995903,15z/data=!4m2!3m1!1s0x0:0x4e6af2e7067e2524?sa=X&ved=1t:2428&ictx=111
+
+
+
+
+
+
+
+About Us
+Welcome to [Taste Explorer] – your ultimate guide to discovering the best dining experiences around!                                                      this is the project done by Vishal Miranda , Shreelakshmi M.P , Yogeesh M , Srinath Gowda S.M.                                      Our Mission
+ we are passionate about food and believe that dining is more than just a meal; it’s an experience. Our mission is to connect food lovers with the finest restaurants, hidden gems, and culinary delights in every city.                                             
+Why Choose Us?
+User-Friendly Interface : Our website is designed with you in mind. Navigate easily and find what you need with just a few clicks.
+Community-Driven : Join our community of food lovers! Share your dining experiences, write reviews, and connect with fellow enthusiasts.
+
+Thank you for choosing Taste Explorer as your go-to restaurant finder. Bon appétit!

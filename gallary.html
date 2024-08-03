@@ -1,0 +1,735 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taste Expo</title>
+
+    <!-- Bootstrap -->
+
+  
+	<link href="css/main.css" rel="stylesheet">
+
+	 <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="fYpvwC9r64pptNrUjbVuAKMy6dHbWzF3rLGcMxHs">
+    <title>The gallery</title>
+
+    <link rel="icon" type="image/png" href="image/favicon.png">
+
+
+    <link rel="stylesheet" href="css/all.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" type="text/css"
+        href="css/toastr.min.css">
+
+    
+    <script src="assets/jquery-3.7.0.min.js"></script>
+    <link href="css/select2.min.css" rel="stylesheet" />
+
+    
+    <script src="assets/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/frontendStyle.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="css/fancybox.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <style>
+    .sign-up {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sign-up:hover {
+        color: #ffffff;
+    }
+
+    .sign-in {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sign-in:hover {
+        color: #ffffff;
+    }
+
+    
+    /* date picker css */
+    .ui-widget.ui-widget-content {
+        width: 100%;
+        font-size: 20px;
+        font-weight: 300;
+        background-color: #efefef !important;
+    }
+
+    .hasDatepicker {
+        width: 100%;
+
+    }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #0066ff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #e5e5e5;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+</style>
+   
+    <link rel="modulepreload" href="d27f3c49.js" /><script type="module" src="assets/app-d27f3c49.js"></script>
+
+</head>
+
+<body class="bg-theme">
+
+    <header class="page-header">
+    <div class="container">
+        <div class="row px-0">
+            <div class="col-lg-12 px-0">
+                <div class="wrapper" id="menu-bar">
+
+                        <a href="index.html" >
+                           	 <img src="t2.png" alt="" width="50" height="50" class="img-fluid">
+                            <img src="a1.png" alt="" width="100" height="100" class="img-fluid">
+                             </a>
+                        <div class="burger" id="burger">
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                        </div>
+                        <span class="overlay">
+                            <div class="close">
+                                <i class="fas fa-times text-white"></i>
+                            </div>
+                        </span>
+                        <nav class="navbar" id="navbar">
+                          
+                            <ul class="menu" id="menu">
+                                <li class="menu-item"><a href="index.html" class="menu-link">
+                                        <span><font size="" color="#ffffff">Home</font></span> </a></li>
+                                                    <li class="menu-item"><a href="aboutus.html" class="menu-link"> <span><font size="" color="#ffffff">About Us</font></span> </a>
+                                <li class="menu-item"><a href="gallaries.html" class="menu-link">
+                                        <span><font size="" color="#ffffff">Gallery</font></span> </a>
+                                </li>
+                                <!-- <li class="menu-item"><a href="dreamlight.html/blogs" class="menu-link"> <span>Blog</span> -->
+                                    </a></li>
+             
+                   <div class="dropdown">  <a href="adminlog.html" class="menu-link"><span><font size="" color="#ffffff">Login</font></span> </a>
+	         
+					 
+  </div>
+                       
+                            </ul>
+                        </nav>
+                                          
+                             </a>
+                        <input type="hidden" value="" name="" id="location_idd">
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</header>
+
+
+     <div class="center">
+<section id="portfolio">
+        <div class="container">
+            <div class="center">
+               <h2>Taste Explorer</h2>
+               <p class="lead">Exploring wide variety of different kinds of food which are seggreted as veg, non-veg & snacks and breverages.</p>
+            </div>
+        
+
+            <ul class="portfolio-filter text-center">
+                <li><a class="btn btn-default active" href="#" data-filter="*">All Foods</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".veg">Veg</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".html">Nonveg</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".wordpress">Snacks & Beverages</a></li>
+            </ul><!--/#portfolio-filter-->
+<center>
+            <div class="row">
+                <div class="portfolio-items">
+                    <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/veg/v6.jpg"  alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/veg/v6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item joomla veg col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/veg/v1.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/veg/v1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+
+
+					                    <div class="portfolio-item joomla veg col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/veg/v22.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/veg/v1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+
+
+					                    <div class="portfolio-item joomla veg col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/veg/v11.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/veg/v1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+
+
+					  <div class="portfolio-item joomla html col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/veg/v4.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/veg/v1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+
+	  <div class="portfolio-item joomla veg col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/veg/v5.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/veg/v1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item  wordpress col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/bev/b9.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/bev/b9.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>        
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item joomla wordpress apps col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/bev/b2.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/bev/b2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>           
+                    </div><!--/.portfolio-item-->
+          
+                    <div class="portfolio-item joomla  veg col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/veg/v3.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/veg/v3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>      
+                    </div><!--/.portfolio-item-->
+
+
+             <div class="portfolio-item joomla  html col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/nonveg/n1.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/nonveg/n1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>      
+                    </div><!--/.portfolio-item-->
+
+        <div class="portfolio-item joomla  html col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/nonveg/n5.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/nonveg/n1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>      
+                    </div><!--/.portfolio-item-->
+
+					        <div class="portfolio-item joomla  html col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/nonveg/n7.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/nonveg/n1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>      
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item html  apps col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/nonveg/n2.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/nonveg/n2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>         
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item html  col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/nonveg/n3.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/nonveg/n3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+
+					                   <div class="portfolio-item joomla wordpress apps col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/bev/b3.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/bev/b3.jpg"  rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>           
+                    </div><!--/.portfolio-item-->
+
+					                   <div class="portfolio-item joomla wordpress apps col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/bev/b4.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/bev/b4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>           
+                    </div><!--/.portfolio-item-->
+
+
+                    <div class="portfolio-item wordpress   col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="image/bev/b1.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Taste Explorer</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="image/bev/b1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+                </div>
+            </div>
+        </div>
+    </section><!--/#portfolio-item-->
+       
+	
+	   </div>
+	
+	</center>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+
+
+            <div class="col-lg-12 text-center my-1">
+               	 <img src="t2.png" alt="" width="50" height="50" class="img-fluid">
+                            <img src="a5.png" alt="" width="100" height="100" class="img-fluid">
+            </div>
+
+            <div class="row my-4">
+                <div class="col-lg-4 footer-item">
+                    <h4><i class="fas fa-map-pin"></i>  Taste Explorer</h4>
+                    <p>
+                   #Salgame Road  Malnad Collage of Engineering , Hassan-573201.
+                    </p>
+                </div>
+                <div class="col-lg-4 footer-item">
+                    <h4><i class="far fa-phone-volume"></i> Contact Us</h4>
+                    <p>
+                        Call Us : <a href="tel:7026368879"> +91 9611362786</a>
+                    </p>
+                    <p>
+                        Whatsapp Us : <a target="_blank" href="https://api.whatsapp.com/send?phone=+919632148246&amp;text=Hi, I would like to discuss further on the services offered by your company. Kindly Connect - Thanks"> +91 9611362786</a>
+                    </p>
+
+                    
+                </div>
+                <div class="col-lg-4 footer-item">
+                    <h4>
+                    <i class="fal fa-clock"></i>    
+                    Working Hours</h4>
+                    <p>
+                        Mon-Fri: 09:00 AM to 10:00PM
+                    </p>
+                    <p>
+                        Sat-Sun: 09:00 AM to 10:00PM
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-lg-12 quick-link">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#gallaries">Gallery</a></li>
+                <li><a href="dreamlight.html">Login</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+        <div class="container ">
+        <div class="row">
+            <div class="col-lg-6  pt-4">
+                <p class="text-light-gray">© 2024 Ideal Computer Education  | All rights reserved</p>
+            </div>
+            <div class="col-lg-6 my-auto">
+                <div class="social-media">
+                    <a href="https://instagram.com/thebingecity?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js1/jquery.js"></script>
+    <script src="js1/bootstrap.min.js"></script>
+    <script src="js1/jquery.prettyPhoto.js"></script>
+    <script src="js1/jquery.isotope.min.js"></script>   
+    <script src="js1/wow.min.js"></script>
+	<script src="js1/main.js"></script>
+
+
+
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/popper.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/owl.carousel.min.js"></script>
+    <script src="assets/toastr.min.js"></script>
+    <script src="assets/select2.min.js"></script>
+
+    
+    <script src="assets/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="assets/wow.min.js" crossorigin="anonymous"></script>
+
+    
+    <script src="assets/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {});
+    </script>
+
+
+
+    <script>
+        new WOW().init(
+
+        );
+    </script>
+
+    <script>
+        const navbarMenu = document.getElementById("navbar");
+        const burgerMenu = document.getElementById("burger");
+        const overlayMenu = document.querySelector(".overlay");
+
+        // Show and Hide Navbar Function
+        const toggleMenu = () => {
+            navbarMenu.classList.toggle("active");
+            overlayMenu.classList.toggle("active");
+        };
+
+        // Collapsible Mobile Submenu Function
+        const collapseSubMenu = () => {
+            navbarMenu
+                .querySelector(".menu-dropdown.active .submenu")
+                .removeAttribute("style");
+            navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+        };
+
+        // Toggle Mobile Submenu Function
+        const toggleSubMenu = (e) => {
+            if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+                e.preventDefault();
+                const menuDropdown = e.target.parentElement;
+
+                // If Dropdown is Expanded, then Collapse It
+                if (menuDropdown.classList.contains("active")) {
+                    collapseSubMenu();
+                } else {
+                    // Collapse Existing Expanded Dropdown
+                    if (navbarMenu.querySelector(".menu-dropdown.active")) {
+                        collapseSubMenu();
+                    }
+
+                    // Expanded the New Dropdown
+                    menuDropdown.classList.add("active");
+                    const subMenu = menuDropdown.querySelector(".submenu");
+                    subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+                }
+            }
+        };
+
+        // Fixed Resize Window Function
+        const resizeWindow = () => {
+            if (window.innerWidth > 992) {
+                if (navbarMenu.classList.contains("active")) {
+                    toggleMenu();
+                }
+                if (navbarMenu.querySelector(".menu-dropdown.active")) {
+                    collapseSubMenu();
+                }
+            }
+        };
+
+        // Initialize Event Listeners
+        burgerMenu.addEventListener("click", toggleMenu);
+        overlayMenu.addEventListener("click", toggleMenu);
+        navbarMenu.addEventListener("click", toggleSubMenu);
+        window.addEventListener("resize", resizeWindow);
+    </script>
+
+    <script>
+        const header = document.querySelector(".page-header");
+        const toggleClass = "is-sticky";
+
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > 100) {
+                header.classList.add(toggleClass);
+            } else {
+                header.classList.remove(toggleClass);
+            }
+        });
+    </script>
+
+
+    <script>
+        $('#banner')
+            .owlCarousel({
+                loop: true,
+                margin: 50,
+                nav: true,
+                dots: false,
+                autoplay: 3000,
+                smartSpeed: 700,
+                navText: ["<div class='nav-btn prev-slide'><i class='fas fa-chevron-left'></i></div>",
+                    "<div class='nav-btn next-slide'><i class='fas fa-chevron-right'></i></div>"
+                ],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    768: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+    </script>
+
+    <script>
+        $('.testimonial-slide')
+
+            .owlCarousel({
+                loop: false,
+                margin: 50,
+                nav: true,
+                dots: false,
+                autoplay: 3000,
+                smartSpeed: 700,
+                navText: ["<div class='nav-btn prev-slide'><i class='fas fa-chevron-left'></i></div>",
+                    "<div class='nav-btn next-slide'><i class='fas fa-chevron-right'></i></div>"
+                ],
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 2
+                    },
+                    768: {
+                        items: 4
+                    },
+                    1000: {
+                        items: 6
+                    }
+                }
+            });
+    </script>
+
+    
+    <script>
+        
+        
+        
+            </script>
+
+    <script>
+        $("#cities").on('change', function() {
+            console.log('city', this.value);
+            var city_id = this.value;
+            window.location.href = "dreamlight.html" + '/book-now/' +
+                "?city_id=" + city_id;
+
+            localStorage.setItem('city_id', city_id);
+        });
+    </script>
+
+    <script>
+        $('.testimonial-slide-1')
+            .owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                dots: true,
+                autoplay: 3000,
+                smartSpeed: 700,
+                navText: ["<div class='nav-btn prev-slide'><i class='fas fa-chevron-left'></i></div>",
+                    "<div class='nav-btn next-slide'><i class='fas fa-chevron-right'></i></div>"
+                ],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+    </script>
+
+    </body>
+
+</html>
