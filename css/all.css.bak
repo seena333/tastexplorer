@@ -1,0 +1,1932 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="fYpvwC9r64pptNrUjbVuAKMy6dHbWzF3rLGcMxHs">
+    <title>The Binge City</title>
+
+    <link rel="icon" type="image/png" href="image/favicon.png">
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://www.thebingecity.com/frontend/css/style.css">
+    
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://www.thebingecity.com/assets/css/frontendStyle.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+    .sign-up {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sign-up:hover {
+        color: #ffffff;
+    }
+
+    .sign-in {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sign-in:hover {
+        color: #ffffff;
+    }
+
+    /* .timeSlot-btn {
+        background-color: transparent;
+        width: 100% !important;
+        height: 50px;
+        margin-right: 15px;
+        border-radius: 30px;
+        border: 1px solid #FF8305;
+        outline: none;
+        margin-top:20px;
+    } */
+
+
+    /* .selected {
+         outline: 2px solid #800000;
+         border-radius: 10px;
+         position: relative;
+         background-color: #800000;
+         top:8px;
+     }
+
+     .selected::before {
+         content: "";
+         height: 28px;
+         width: 28px;
+         background-color: #800000;
+         border-radius: 50%;
+         font-family: "Font Awesome 5 pro";
+         font-weight: 600;
+         position: absolute;
+         top: -10px;
+         right: -10px;
+     }
+
+     .selected::after {
+         content: "\f00c";
+         font-family: "Font Awesome 5 pro";
+         font-weight: 600;
+         position: absolute;
+         top: -6px !important;
+         color: #fff;
+         font-size: 13px;
+         right: -2px;
+     } */
+
+
+    .selected {
+        border: 2px solid #800000;
+        border-radius: 12px;
+        position: relative;
+    }
+
+    /* .selected::before {
+        content: "";
+        height: 28px;
+        width: 28px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        font-family: "Font Awesome 5 pro";
+        font-weight: 600;
+        position: absolute;
+        top: 8px;
+        right: 9px;
+    }
+
+    .selected::after {
+        content: "\f00c";
+        font-family: "Font Awesome 5 pro";
+        font-weight: 600;
+        position: absolute;
+        top: 13px !important;
+        color: #800000;
+        font-size: 13px;
+        right: 16px;
+    } */
+
+    /* date picker css */
+    .ui-widget.ui-widget-content {
+        width: 100%;
+        font-size: 20px;
+        font-weight: 300;
+        background-color: #efefef !important;
+    }
+
+    .hasDatepicker {
+        width: 100%;
+
+    }
+
+</style>
+    
+    <script>
+        window._asset = "https://www.thebingecity.com/";
+        window._url = "https://www.thebingecity.com";
+    </script>
+
+    <link rel="modulepreload" href="d27f3c49.js" /><script type="module" src="1d27f3c49.js"></script>
+
+</head>
+
+<body class="bg-theme">
+
+    <header class="page-header">
+    <div class="container">
+        <div class="row px-0">
+            <div class="col-lg-12 px-0">
+                <div class="wrapper" id="menu-bar">
+                    <div class="left-area col-lg-12 col-md-12 order-lg-1 order-2">
+                        <a href="dreamlight.html" class="brand-mbl">
+                            <img src="white-logo.svg" alt=""
+                                class="img-fluid">
+                            <!-- <h6>Binge City</h6> --> </a>
+                        <div class="burger" id="burger">
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                        </div>
+                        <span class="overlay">
+                            <div class="close">
+                                <i class="fas fa-times text-white"></i>
+                            </div>
+                        </span>
+                        <nav class="navbar" id="navbar">
+                            <a href="https://www.thebingecity.com" class="brand-nav">
+                                <img src="https://www.thebingecity.com/frontend/assets/image/home/white-logo.svg" alt=""
+                                    class="img-fluid">
+                            </a>
+                            <ul class="menu" id="menu">
+                                <li class="menu-item"><a href="https://www.thebingecity.com" class="menu-link">
+                                        <span>Home</span> </a></li>
+                                <li class="menu-item"><a href="https://www.thebingecity.com/book-now" class="menu-link"> <span>Book
+                                            now</span> </a>
+                                </li>
+                                <li class="menu-item"><a href="https://www.thebingecity.com/gallaries" class="menu-link">
+                                        <span>Gallery</span> </a>
+                                </li>
+                                <!-- <li class="menu-item"><a href="https://www.thebingecity.com/blogs" class="menu-link"> <span>Blog</span> -->
+                                    </a></li>
+                                <li class="menu-item"><a href="https://www.thebingecity.com/faq" class="menu-link">
+                                        <span>FAQ</span> </a></li>
+                                <li class="menu-item">
+                                    <a href="https://www.thebingecity.com/term&amp;condition" class="menu-link"> <span>Terms &
+                                            Conditions</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item"><a href="https://www.thebingecity.com/contact" class="menu-link">
+                                        <span>Contact</span> </a>
+                                </li>
+                            </ul>
+                        </nav>
+                                                
+                        <input type="hidden" value="" name="" id="location_idd">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</header>
+
+        <!-- <section class="banner" style="background-image: url(frontend/assets/image/home/binge-city-banner.webp);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-12 my-auto">
+                    <h1 class="wow fadeIn">
+                        Celebrate Special <br /> <span class="introText" data-text="Occasions">Occasions </span>
+                        <br> at Our Exclusive<br> Private Theater
+                    </h1>
+                    <p class="wow fadeIn text-white" data-wow-delay="0.5s">
+                        Celebrate with your loved ones with the best <br> rated personal
+                        theater.
+                    </p>
+
+                    <div class="col-lg-6 mt-4">
+                        <a href="https://www.thebingecity.com/book-now" class="bookNow">
+                            <span class="text">Book Now</span>
+                            <div class="icon">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </section> -->
+
+    <section>
+        <div id="banner" class="owl-carousel owl-theme">
+            <div class="item">
+                <section class="banner" style="background-image: url(frontend/assets/image/home/binge-city-banner.webp);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-12 my-auto">
+                                <h1 class="wow fadeIn" data-wow-delay="0.7s">
+                                    Celebrate Special <br /> <span class="introText" data-text="Occasions">Occasions</span>
+                                    <br> at Our Exclusive <br /> Private Theater
+                                </h1>
+                                <p class="banner-subtitle wow fadeInUp" data-wow-delay="0.8s">
+                                    Celebrate with your loved ones with the Best <br> rated Personal Theatre.
+                                </p>
+
+                                <div class="row mt-32 wow fadeInUp" data-wow-delay="0.9s">
+                                    <div class="col-lg-6">
+                                        <a href="https://www.thebingecity.com/book-now" class="bookNow">
+                                            <span class="text">Book Now</span>
+                                            <div class="icon">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="item">
+                <section class="banner" style="background-image: url(frontend/assets/image/home/binge-city-banner-2.webp);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-12 my-auto">
+                                <h1 class="wow fadeIn" data-wow-delay="0.7s">
+                                    Celebrate Special <br /> <span class="introText" data-text="Occasions">Occasions</span>
+                                    <br> at Our Exclusive <br /> Private Theater
+                                </h1>
+                                <p class="banner-subtitle wow fadeInUp" data-wow-delay="0.8s">
+                                    Celebrate with your loved ones with the Best <br> rated Personal Theatre.
+                                </p>
+
+                                <div class="row mt-32 wow fadeInUp" data-wow-delay="0.9s">
+                                    <div class="col-lg-6">
+                                        <a href="https://www.thebingecity.com/book-now" class="bookNow">
+                                            <span class="text">Book Now</span>
+                                            <div class="icon">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </div>
+    </section>
+  
+
+    <section class="intro-sec" style="background-image: url(frontend/assets/image/home/sec_banner.jpg);">
+        <div class="container">
+            <div class="row ptb pt-4">
+                <div class="col-lg-12 text-center mx-auto">
+
+                    <h1 class="wow fadeIn">
+
+                        The Magical Experience of <br /> <span> Celebration </span> at Private Theater
+                    </h1>
+                    <div class="row">
+                        <div class="col-lg-9 mx-auto">
+                            <p class="pt-3 wow fadeInUp">
+                            Make your parties awesome with The Binge City's special event packages! We make your events unforgettable 
+                            with cool themes and top-notch entertainment. Let us make your next party extraordinary!
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <a href="https://www.thebingecity.com/book-now" class="pkg-bookNow mx-auto mt-4 wow fadeInUp">
+                        <span class="text">Book Now</span>
+                        <div class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </a>
+                    <!-- <a href="#" class="bookNow mx-auto mt-5">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span class="text">Book Now</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="icon">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <i class="fas fa-chevron-right"></i>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ptb why-us">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 mb-lg-5 text-center wow fadeInUp">
+                    <!-- <h1 class="title_40"> Why choose us</h1> -->
+                    <div class="blocktitle">
+                        <h4 class="tt-title">
+                            Why Choose Us
+                        </h4>
+                        <!-- <div class="tt-title-under">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Choose
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div> -->
+                    </div>
+
+                </div>
+                <div class="col-lg-3 text-center pb-5">
+                    <div class="why-card wow fadeInUp">
+                        <div class="circle" class="tilt">
+                            <img src="https://www.thebingecity.com/frontend/assets/image/home/celebrate-05.png" class="tv"
+                                alt="">
+                        </div>
+                        <div class="why-cont">
+                            <h6>Celebrate</h6>
+                            <p>
+                                Join us to celebrate theater's captivating journey! 🎭🎉
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center pb-5">
+                    <div class="why-card wow fadeInUp">
+                        <div class="circle" class="tilt">
+                            <img src="https://www.thebingecity.com/frontend/assets/image/home/watch-02.svg" class="tv" alt="">
+                        </div>
+                        <div class="why-cont">
+                            <h6>Watch</h6>
+                            <p>
+                                Cast your streaming
+                                services on to a large screen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center pb-5 wow fadeInUp">
+                    <div class="why-card">
+                        <div class="circle">
+                            <img src="https://www.thebingecity.com/frontend/assets/image/home/eat-03.svg" class="tv" alt="">
+                        </div>
+                        <div class="why-cont">
+                            <h6>Eat</h6>
+                            <p>
+                                Eat whenever you want in
+                                between your favorite shows.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 text-center pb-5 wow fadeInUp">
+                    <div class="why-card">
+                        <div class="circle">
+                            <img src="https://www.thebingecity.com/frontend/assets/image/home/play-04.svg" class="tv" alt="">
+                        </div>
+                        <div class="why-cont">
+                            <h6>Play</h6>
+                            <p>
+                                Play your favorite games
+                                with a never before experience.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="ptb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="package-heading wow fadeInUp">
+                        <!-- <h1 class="title_40"> Events + Parties Packages</h1> -->
+                        <div class="blocktitle1">
+                            <h4 class="tt-title">
+                                Events & Celebrations
+                            </h4>
+                            <!-- <div class="tt-title-under">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Packages
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div> -->
+                        </div>
+                        <!-- <h1 class="title_40 fw-bold"> Events + Parties Packages</h1> -->
+                        <p class="wow fadeInUp">
+                            Elevate your celebrations with expert planning, stylish decor, and captivating
+                            entertainment. From intimate gatherings to grand festivities, we tailor each package to
+                            your
+                            unique vision, ensuring a seamless and remarkable experience for you and your guests.
+                            Let us
+                            turn your special moments into cherished memories with our all-inclusive Events +
+                            Parties
+                            Packages.
+                        </p>
+                        <div class="col-lg-6 mt-5 wow fadeInUp">
+                            <a href="https://www.thebingecity.com/book-now" class="pkg-bookNow">
+                                <span class="text">Book Now</span>
+                                <div class="icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+
+                    <div class="row">
+                        <div class="col-lg-12 mt-5 wow fadeInUp">
+                            <div class="package-image">
+                                <img src="https://www.thebingecity.com/frontend/assets/image/home/Birthday-Package.webp" class="img-fluid"
+                                    alt="">
+
+                                <div class="package-content">
+                                    <h3>Birthday Celebration</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 mt-4 wow fadeInUp">
+                            <div class="package-image">
+                                <img src="https://www.thebingecity.com/frontend/assets/image/home/Anniversary-Package.webp" class="img-fluid"
+                                    alt="">
+
+                                <div class="package-content">
+                                    <h3>Anniversary Celebration</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 mt-4 wow fadeInUp">
+                            <div class="package-image">
+                                <img src="https://www.thebingecity.com/frontend/assets/image/home/marriage-Package.webp"
+                                    class="img-fluid" alt="">
+
+                                <div class="package-content">
+                                    <h3>Marriage Proposal</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mt-4 wow fadeInUp">
+                            <div class="package-image">
+                                <img src="https://www.thebingecity.com/frontend/assets/image/home/movie-screen-projector.jpg"
+                                    class="img-fluid" alt="">
+
+                                <div class="package-content">
+                                    <h3>Romantic Date</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 mt-4 wow fadeInUp">
+                            <div class="package-image">
+                                <img src="https://www.thebingecity.com/frontend/assets/image/home/celebration-hall.webp"
+                                    class="img-fluid" alt="">
+
+                                <div class="package-content">
+                                    <h3>Celebrate your event at our celebration hall</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="ptb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-lg-4 mx-auto text-center">
+                    <!-- <h1 class="title_40">Our Gallery</h1> -->
+                    <div class="blocktitle wow fadeInUp">
+                        <h4 class="tt-title">
+                            Our Gallery
+                        </h4>
+                        <!-- <div class="tt-title-under">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Gallery
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row pb-3 wow fadeInUp g-3">
+                <div class="col-lg-6 col-md-12 text-end sport-ground">
+                    <img src="https://www.thebingecity.com/frontend/assets/image/home/Gallery-1.jpg" alt="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row g-3">
+                        <div class="col-lg-6 col-md-12 work-culture">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                        <img src="https://www.thebingecity.com/frontend/assets/image/home/Gallery-2.jpg" alt="img-fluid">
+                                </div>
+                                <div class="col-lg-12 margin-up">
+                                        <img src="https://www.thebingecity.com/frontend/assets/image/home/Gallery-3.jpg" alt="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 celebration-culture">
+                                <img src="https://www.thebingecity.com/frontend/assets/image/home/Gallery-4.jpg" alt="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row pb-3 wow fadeInUp g-3">
+                <div class="col-lg-6 col-md-12">
+                    <div class="row g-3">
+                        <div class="col-lg-6 col-md-12 work-culture">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                        <img src="https://www.thebingecity.com/frontend/assets/image/home/Gallery-6.jpg" alt="img-fluid">
+                                </div>
+                                <div class="col-lg-12 margin-up">
+                                        <img src="https://www.thebingecity.com/frontend/assets/image/home/Gallery-7.jpg" alt="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 celebration-culture">
+                                <video autoplay muted loop id="myVideo" playsinline="" preload="yes">
+                                    <source src="https://www.thebingecity.com/frontend/assets/image/home/Gallery-5.mp4" type="video/mp4">
+                                </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 text-end sport-ground">
+                        <img src="https://www.thebingecity.com/frontend/assets/image/home/Gallery-8.jpg" alt="img-fluid">
+                </div>
+            </div> -->
+
+
+            <div class="row">
+                <div class="col-lg-4 mb-4 col-sm-6 image-hover">
+                    <a href="https://www.thebingecity.com/frontend/assets/image/home/Gallery-1.jpg" data-fancybox="gallery">
+                        <img src="https://www.thebingecity.com/frontend/assets/image/home/Gallery-1.jpg" alt="" class="img-fluid rounded shadow-sm" loading="lazy" /> 
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-4 col-sm-6 image-hover">
+                    <a href="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-1.webp" data-fancybox="gallery">
+                        <img src="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-1.webp" alt="" class="img-fluid rounded shadow-sm" loading="lazy" /> 
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-4 col-sm-6 image-hover">
+                    <a href="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-6.webp" data-fancybox="gallery">
+                        <img src="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-6.webp" alt="" class="img-fluid rounded shadow-sm" loading="lazy" /> 
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-4 col-sm-6 image-hover">
+                    <a href="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-3.webp" data-fancybox="gallery">
+                        <img src="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-3.webp" alt="" class="img-fluid rounded shadow-sm" loading="lazy" /> 
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-4 col-sm-6 image-hover">
+                    <a href="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-7.webp" data-fancybox="gallery">
+                        <img src="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-7.webp" alt="" class="img-fluid rounded shadow-sm" loading="lazy" /> 
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-4 col-sm-6 image-hover">
+                    <a href="https://www.thebingecity.com/frontend/assets/image/home/gallery/gal-video-1.mp4" data-fancybox="gallery">
+                        <video controls muted id="myVideo" playsinline="" preload="yes">
+                            <source src="https://www.thebingecity.com/frontend/assets/image/home/gallery/gal-video-1.mp4" type="video/mp4" class="rounded shadow-sm">
+                        </video>
+                    </a>
+                </div>
+                
+                <div class="col-lg-4 mb-4 col-sm-6 image-hover">
+                    <a href="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-9.webp" data-fancybox="gallery">
+                        <img src="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-9.webp" alt="" class="img-fluid rounded shadow-sm" loading="lazy" /> 
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-4 col-sm-6 image-hover">
+                    <a href="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-10.webp" data-fancybox="gallery">
+                        <img src="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-10.webp" alt="" class="img-fluid rounded shadow-sm" loading="lazy" /> 
+                    </a>                
+                </div>
+                <div class="col-lg-4 mb-4 col-sm-6 image-hover">
+                    <a href="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-11.webp" data-fancybox="gallery">
+                        <img src="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-11.webp" alt="" class="img-fluid rounded shadow-sm" loading="lazy" /> 
+                    </a>              
+                </div>
+                <!-- <div class="col-lg-4 mb-4 col-sm-6 image-hover">
+                    <a href="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-2.webp" data-fancybox="gallery">
+                        <img src="https://www.thebingecity.com/frontend/assets/image/home/gallery/gallery-2.webp" alt="" class="img-fluid rounded shadow-sm" loading="lazy" /> 
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-4 col-sm-6 image-hover">
+                    <a href="https://www.thebingecity.com/frontend/assets/image/home/Gallery-5.mp4" data-fancybox="gallery">
+                        <video controls muted id="myVideo" playsinline="" preload="yes">
+                            <source src="https://www.thebingecity.com/frontend/assets/image/home/Gallery-5.mp4" type="video/mp4" class="rounded shadow-sm">
+                        </video>
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-4 col-sm-6 image-hover">
+                    <a href="https://www.thebingecity.com/frontend/assets/image/home/gallery/gal-video-1.mp4" data-fancybox="gallery">
+                        <video controls muted id="myVideo" playsinline="" preload="yes">
+                            <source src="https://www.thebingecity.com/frontend/assets/image/home/gallery/gal-video-1.mp4" type="video/mp4" class="rounded shadow-sm">
+                        </video>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="client-sec ptb ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <!-- <h1 class="title_40">Testimonials</h1> -->
+                    <div class="blocktitle-test wow fadeInUp">
+                        <h4 class="tt-title">
+                            Testimonial
+                        </h4>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-9 mx-auto carousal-line4 position-relative">
+
+                <div class="row">
+                    <div class="col-lg-12 mx-auto">
+                        <div class="owl-carousel owl-theme testimonial-slide-1 ">
+                            <div class="item">
+                                <div class="testimonial text-center">
+                                    <img src="https://www.thebingecity.com/frontend/assets/image/home/quote-iocn-qc.png" class="quote"
+                                        alt="">
+                                    <h6>Awesome movie experience</h6>
+                                    <p>
+                                        The Binge City offers an exclusive cinematic experience like no other. From the plush seating 
+                                        to the top-notch sound and visual quality, it's the ultimate heaven for movie enthusiasts. I 
+                                        had an unforgettable movie night there with friends, and I can't wait to return for another screening.
+
+                                    </p>
+
+                                    <!-- <img src="https://www.thebingecity.com/frontend/assets/image/home/testimonial.png"
+                                        class="user-icon" alt=""> -->
+                                        <img src="https://w7.pngwing.com/pngs/490/157/png-transparent-male-avatar-boy-face-man-user-flat-classy-users-icon.png" class="user-icon" alt="">
+                                    
+                                        <h5>Udaykumar Pitchalraju</h5>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial text-center">
+                                    <img src="https://www.thebingecity.com/frontend/assets/image/home/quote-iocn-qc.png" class="quote"
+                                        alt="">
+                                    <h6>Amazing Celebration</h6>
+                                    <p>
+                                        I celebrated my husband's birthday here. It was an amazing experience, well-decorated, and it was 
+                                        clean. We spent a quality 3 hours. You're doing an amazing job; highly recommended if you're looking to 
+                                        celebrate or planning to have a relaxed time with your loved ones!
+                                    </p>
+
+                                    <!-- <img src="https://www.thebingecity.com/frontend/assets/image/home/testimonial.png"
+                                        class="user-icon" alt=""> -->
+
+                                    <img src="https://w7.pngwing.com/pngs/832/40/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png" class="user-icon" alt="">
+                                    <h5>suchithra kuyyamudi</h5>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial text-center">
+                                    <img src="https://www.thebingecity.com/frontend/assets/image/home/quote-iocn-qc.png" class="quote"
+                                        alt="">
+                                    <h6>Best Experience</h6>
+                                    <p>
+                                        The best experience that we had in our entire life. This place is a must-visit, highly recommended. Anyone looking for a 
+                                        place to give surprise to their loved ones, must try this place. Thank you, The Binge City, for giving us such beautiful 
+                                        memories.
+                                    </p>
+
+                                    <img src="https://w7.pngwing.com/pngs/832/40/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png" class="user-icon" alt="">
+                                     
+                                    <!-- <img src="https://www.thebingecity.com/frontend/assets/image/home/testimonial.png"
+                                        class="user-icon" alt=""> -->
+                                    <h5>Lakshmi S</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="ptb faq">
+        <img src="https://www.thebingecity.com/frontend/assets/image/home/faq-Ellipse-big.svg" class="faq-Ellipse-big" alt="">
+        <img src="https://www.thebingecity.com/frontend/assets/image/home/faq-Ellipse-small.svg" class="faq-Ellipse-small"
+            alt="">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 mx-auto">
+
+                    <h2 class="title_40 text-center fw-bold mb-5">FAQ</h2>
+
+                    <!-- <div class="accordion" id="accordionExample">
+                                                                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-11">
+                                        <button class="accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-11" aria-expanded="true"
+                                            aria-controls="collapse-11">
+                                            1. Can I bring Liquor ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-11"
+                                        class="accordion-collapse collapse "
+                                        aria-labelledby="heading-11" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                <p><span style="color: rgb(34, 34, 34); font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;">Alcohol, Cigarette smoking and tobacco products are not allowed inside premises.</span><br></p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-10">
+                                        <button class="accordion-button "
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-10" aria-expanded="true"
+                                            aria-controls="collapse-10">
+                                            2. Can I bring food from outside ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-10"
+                                        class="accordion-collapse collapse "
+                                        aria-labelledby="heading-10" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                <p><span style="color: rgb(34, 34, 34); font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;">Yes, a nominal fee needs to be paid for cleaning and disposal of waste.</span><br></p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-9">
+                                        <button class="accordion-button "
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-9" aria-expanded="true"
+                                            aria-controls="collapse-9">
+                                            3. What if I damage any object inside theater ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-9"
+                                        class="accordion-collapse collapse "
+                                        aria-labelledby="heading-9" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                <p><span style="color: rgb(34, 34, 34); font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;">Customers will be liable to pay in case of any damage to any object in the theater including the walls, lights, seating, etc.</span><br></p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-8">
+                                        <button class="accordion-button "
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-8" aria-expanded="true"
+                                            aria-controls="collapse-8">
+                                            4. what is the Refund Policy ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-8"
+                                        class="accordion-collapse collapse "
+                                        aria-labelledby="heading-8" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                <p id="m_3440009426501573109gmail-viewer-2vqu1" style="color: rgb(34, 34, 34); font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; direction: ltr; font-kerning: auto; font-feature-settings: normal; font-stretch: normal; line-height: 1.4em; box-sizing: inherit; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;"><span style="direction: ltr; display: block; box-sizing: inherit; font: inherit;"><span style="direction: ltr; box-sizing: inherit; font: inherit;">1. Partial Refund of the booking amount will be given if the booking is cancelled at least 3 days before the booked date.</span></span></p><p id="m_3440009426501573109gmail-viewer-24mpn" style="color: rgb(34, 34, 34); font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; direction: ltr; font-kerning: auto; font-feature-settings: normal; font-stretch: normal; line-height: 1.4em; box-sizing: inherit; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;"><span style="direction: ltr; display: block; box-sizing: inherit; font: inherit;"><span style="direction: ltr; box-sizing: inherit; font: inherit;">2. Appropriate refund will be provided if the show is interrupted due to technical issue. Reimbursement is paid after deducting the rent for the period of time before interruption.</span></span></p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-7">
+                                        <button class="accordion-button "
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-7" aria-expanded="true"
+                                            aria-controls="collapse-7">
+                                            5. What is the age criteria to book ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-7"
+                                        class="accordion-collapse collapse "
+                                        aria-labelledby="heading-7" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                <p id="m_3440009426501573109gmail-viewer-2vqu1" style="color: rgb(34, 34, 34); font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; direction: ltr; font-kerning: auto; font-feature-settings: normal; font-stretch: normal; line-height: 1.4em; box-sizing: inherit; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;"><span style="direction: ltr; display: block; box-sizing: inherit; font: inherit;"><span style="font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit; background-color: var(--bs-card-bg); text-align: var(--bs-body-text-align);">Legal guardians can book the theater and bring their minor ward(s) along with them.</span><br></span></p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-6">
+                                        <button class="accordion-button "
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-6" aria-expanded="true"
+                                            aria-controls="collapse-6">
+                                            6. What do I watch ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-6"
+                                        class="accordion-collapse collapse "
+                                        aria-labelledby="heading-6" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                <p id="m_3440009426501573109gmail-viewer-2vqu1" style="color: rgb(34, 34, 34); font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; direction: ltr; font-kerning: auto; font-feature-settings: normal; font-stretch: normal; line-height: 1.4em; box-sizing: inherit; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;"><span style="direction: ltr; display: block; box-sizing: inherit; font: inherit;"><span style="direction: ltr; box-sizing: inherit; font: inherit;">You could watch movie or TV series as as per Indian laws.</span></span></p><p id="m_3440009426501573109gmail-viewer-697gv" style="color: rgb(34, 34, 34); font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; direction: ltr; font-kerning: auto; font-feature-settings: normal; font-stretch: normal; line-height: 1.4em; box-sizing: inherit; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;"><span style="direction: ltr; display: block; box-sizing: inherit; font: inherit;"><span style="direction: ltr; box-sizing: inherit; font: inherit;">Customers must not stream any content which is illegal/prohibited as per Indian laws.</span></span></p><p id="m_3440009426501573109gmail-viewer-9b1tv" style="color: rgb(34, 34, 34); font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; direction: ltr; font-kerning: auto; font-feature-settings: normal; font-stretch: normal; line-height: 1.4em; box-sizing: inherit; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;"><span style="direction: ltr; display: block; box-sizing: inherit; font: inherit;"><span style="direction: ltr; box-sizing: inherit; font: inherit;">We will not be liable for any consequences that arise out of violation of this condition and we will not allow such customers to book with us again.</span></span></p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-3">
+                                        <button class="accordion-button "
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-3" aria-expanded="true"
+                                            aria-controls="collapse-3">
+                                            7. How do we watch ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-3"
+                                        class="accordion-collapse collapse "
+                                        aria-labelledby="heading-3" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                <p id="m_3440009426501573109gmail-viewer-2vqu1" style="color: rgb(34, 34, 34); font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; direction: ltr; font-kerning: auto; font-feature-settings: normal; font-stretch: normal; line-height: 1.4em; box-sizing: inherit; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;"><span style="direction: ltr; display: block; box-sizing: inherit; font: inherit;"><span style="direction: ltr; box-sizing: inherit; font: inherit;">You need to have your own OTT account.</span></span></p><p id="m_3440009426501573109gmail-viewer-ajut4" style="color: rgb(34, 34, 34); font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; direction: ltr; font-kerning: auto; font-feature-settings: normal; font-stretch: normal; line-height: 1.4em; box-sizing: inherit; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;"><span style="direction: ltr; display: block; box-sizing: inherit; font: inherit;"><span style="direction: ltr; box-sizing: inherit; font: inherit;">We provide streaming source for you to easily log into your account and start watching.</span></span></p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                        </div> -->
+
+
+                    <div class="accordion" id="accordionExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    1. How do we watch ?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        You need to have your own OTT account. <br>
+
+                                        Because OTT accounts cannot be used for commercial purposes, we would not be
+                                        able to provide access to any OTT accounts. We provide streaming source for
+                                        you to easily log into your account and start watching.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2. What do I watch ?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        You could watch any movie or series as as per Indian laws.
+                                    </p>
+                                    <p>
+                                        Customers must not stream any content which is illegal/prohibited as per
+                                        Indian laws.
+                                       
+                                    </p>
+                                    <p>
+                                        We will not be liable for any consequences that arise out of violation of
+                                        this condition and we will not allow such customers to book with us again.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    3. What is the age criteria to book ?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Minors i.e. below 18 years are not allowed to book the theater.
+                                    </p>
+                                    <p>
+                                        Legal guardians can book the theater and bring their minor ward(s) along
+                                        with them.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    4. What is the Refund Policy ?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        1. Partial Refund of the booking amount will be given if the booking is
+                                        cancelled at least 3 days before the booked date.
+                                    </p>
+                                    <p>
+                                        2. Appropriate refund will be provided if the show is interrupted due to
+                                        technical issue. Reimbursement is paid after deducting the rent for the
+                                        period of time before interruption.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    5. What if I damage any object inside theater ?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Customers will be liable to pay in case of any damage to any object in
+                                        the theater including the walls, lights, seating, etc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    6. Can I bring food from outside ?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Yes, a nominal fee needs to be paid for cleaning and disposal of waste.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false"
+                                    aria-controls="collapseSeven">
+                                    7. Can I bring Liquor ?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse"
+                                aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Alcohol, Cigarette smoking and tobacco products are not allowed inside
+                                        premises.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <input type="hidden" value="" class="location_id" id="location_id">
+        <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+
+<div class="modal fade " id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content select-location-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Select Your Nearest Location</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="far fa-times"></i>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="movie-location-selector">
+                    <div class="row justify-content-center" id="locationDiv">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <script>
+    var pkg_id = '';
+    var pkg_title = '';
+    var pkg_price = 0;
+    var addOn_id;
+    var addOn_title;
+    var t_amount = 0;
+    var g_amount = 0;
+    var gt_amount = 0;
+    var addOn_unit_price = 0;
+    var addOn_price = 0;
+    var addOn_qty = 1;
+    var addOn_image;
+    var sc_id = 0;
+    var timeSlot_amount = 0;
+    var addOnData = [];
+
+
+    $(document).ready(function() {
+
+
+
+        // var location_id = $("#location_id").val();
+        // if (location_id != '') {
+        //     $('#locationModal').modal({
+        //         show: 'false'
+        //     });
+        // } else {
+        //     $.ajax({
+        //         type: "get",
+        //         url: "https://www.thebingecity.com/locationGet",
+        //         success: function(response) {
+        //             $("#locationDiv").empty()
+        //             $("#locationDiv").append(response);
+        //             $("#locationModal").modal('show');
+        //         }
+        //     });
+        // }
+
+        $.ajax({
+            type: "get",
+            url: "https://www.thebingecity.com/getCartAddons",
+            data: {
+                location_id: location_id
+            },
+            success: function(response) {
+                // console.log(response.cartAddon);
+                // addOnData = response.cartAddon;
+                // console.log(addOnData);
+                // get cart Addons data
+                var addons = JSON.parse($('#cartAddons').val())
+                console.log(addons);
+                // assign cart addons data
+                if (addons.length > 0) {
+                    addons.map((item) => {
+                        addOnData.push({
+                            "addOn_id": item.addon_id,
+                            "addOn_title": item.addon_title,
+                            "addOn_unit_price": item.addon_price,
+                            "addOn_price": item.addon_price,
+                            "addOn_qty": item.addon_qty,
+                            "addOn_image": item.addon_image
+
+                        });
+                    });
+                }
+                calculateTotal();
+            }
+        });
+
+
+
+        // function for autoload city lists when open the site
+        var city_id = $("#city_id").val();
+        if (city_id != '') {
+            $('#cityModal').modal({
+                show: 'false'
+            });
+        } else {
+            $.ajax({
+                type: "get",
+                url: "https://www.thebingecity.com/locationGet",
+                success: function(response) {
+                    $("#cityDiv").empty()
+                    $("#cityDiv").append(response);
+                    $("#cityModal").modal('show');
+                }
+            });
+        }
+        timeSlot_amount = $("#timeSlotAmountt").val();
+        pkg_title = $("#package_title").val();
+        var package_price = $("#package_price").val();
+        if (parseFloat(package_price)) {
+            pkg_price = parseFloat(package_price);
+        } else {
+            pkg_price = 0;
+        }
+        // code for get &  calculate all price selected  package & addons
+        $(document).on('click', '.addon-list', function() {
+            $(this).toggleClass('selected');
+            addOn_id = $(this).data('id');
+            addOn_title = $(`#addon-title-${addOn_id}`).val();
+            addOn_unit_price = $(`#addon-unit_price-${addOn_id}`).val();
+            addOn_price = $(`#addon-price-${addOn_id}`).val();
+            addOn_image = $(`#addon-image-${addOn_id}`).val();
+            var obj = addOnData.find(item => item.addOn_id == addOn_id);
+            var index = addOnData.indexOf(obj)
+            if (index == -1) {
+                addOnData.push({
+                    addOn_id,
+                    addOn_title,
+                    addOn_price,
+                    addOn_qty,
+                    addOn_unit_price,
+                    addOn_image,
+                });
+            } else {
+                addOnData.splice(index, 1);
+            }
+            // making dynamic add addon
+            // addonData += '<div class="row product-bg mt-3 pb-20"><div class="col-lg-9"><div class="row"><h5 class="pb-2">'+addOn_title+'</h5><div class="col-12 pb-1"> <p class="mb-0">'+addOn_qty+' </div></div><div class="col-lg-6 col-md-1 px-0"><div class="price"> <h3 class="theme-font">'+addOn_price+' </div></div></div></div>'
+            // $.ajax({
+            //     type: "get",
+            //     url: "https://www.thebingecity.com/getSelectedAddonData",
+            //     data: {
+            //         addOn_id: addOn_id
+            //     },
+            //     success: function(response) {
+            //         // console.log(response);
+            //         $(".addonAdded").append(response);
+            //     }
+            // });
+
+
+
+            calculateTotal();
+            $("#total_amount").val(t_amount);
+            $("#gst_amount").val(g_amount);
+            $("#grand_amount").val(gt_amount);
+            // $("#package_id").val(pkg_id);
+            $("#package_title").val(pkg_title);
+            $("#package_amount").val(pkg_price);
+        });
+
+        // validating email field
+        const validateEmail = (email) => {
+            return email.match(
+                /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+        };
+
+        const validate = () => {
+            const $result = $('#result');
+            const email = $('#customer_email').val();
+            $result.text('');
+
+            if (validateEmail(email)) {
+                $result.text(email + ' is valid.');
+                $result.css('color', 'green');
+                return true;
+            } else {
+                $result.text(email + ' is invalid.');
+                $result.css('color', 'red');
+            }
+            return false;
+        }
+
+        $('#customer_email').on('input', validate);
+        // end email field validation
+
+
+
+        $(document).on('click', '.nextFromBookingDetails', function() {
+            var customerName = $("#customer_name").val();
+            var customerPhone = $("#customer_phone").val();
+            var customerEmail = $("#customer_email").val();
+            var user_id = $("#user_id").val();
+            var city_id = $(".city_iddd").val();
+            var location_id = $("#location_id").val();
+            var package_id = $("#package_idd").val();
+            var screen_id = $("#screen_id").val();
+            var bookDate = $("#bookDate").val();
+            var slot_id = $("#slot_id").val();
+            var start_time = $("#start_time").val();
+            var end_time = $("#end_time").val();
+            var slot_amount = $("#slot_amount").val();
+            var package_title = $("#package_title").val();
+            var package_amount = $("#package_price").val();
+            var total_amount = $("#total_amount").val();
+            var gst_amount = $("#gst_amount").val();
+            var grand_amount = $("#grand_amount").val();
+            var package_price = $("#package_amount").val();
+            var package_dicount_amount = $("#package_dicount_amount").val();
+            var package_dicount_percent = $("#package_dicount_percent").val();
+            var package_discountstart_date = $("#package_dicountstart_date").val();
+            var package_dicountend_date = $("#package_dicountend_date").val();
+            // alert("grandTotal=" + grand_amount + "  total_amount=" + total_amount)
+            if (customerName == '' && customerPhone == '' && customerEmail == '') {
+                $(".errorCustomerName").append("This field is mandatory");
+                $(".errorCustomerPhone").append("This field is mandatory");
+                $(".errorCustomerEmail").append("This field is mandatory");
+            }
+            if (customerName == '') {
+                $(".errorCustomerName").empty();
+                $(".errorCustomerName").append("This field is mandatory")
+                return false;
+            } else {
+                $(".errorCustomerName").empty();
+                // return true;
+            }
+            if (customerPhone == '') {
+                $(".errorCustomerPhone").empty();
+                $(".errorCustomerPhone").append("This field is mandatory");
+                return false;
+            } else {
+                $(".errorCustomerPhone").empty();
+                // return true;
+            }
+            if (customerEmail == '') {
+                $(".errorCustomerEmail").empty();
+                $(".errorCustomerEmail").append("This field is mandatory");
+                return false;
+            } else {
+                $(".errorCustomerEmail").empty();
+                // return true;
+            }
+            if (user_id != '') {
+                $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    type: "post",
+                    url: "https://www.thebingecity.com/theatorBooking",
+                    data: {
+                        user_id: user_id,
+                        customerName: customerName,
+                        customerPhone: customerPhone,
+                        customerEmail: customerEmail,
+                        city_id: city_id,
+                        location_id: location_id,
+                        screen_id: screen_id,
+                        package_id: package_id,
+                        bookDate: bookDate,
+                        slot_id: slot_id,
+                        start_time: start_time,
+                        end_time: end_time,
+                        slot_amount: slot_amount,
+                        package_title: package_title,
+                        package_amount: package_amount,
+                        total_amount: total_amount,
+                        gst_amount: gst_amount,
+                        grand_amount: grand_amount,
+                        package_price: package_price,
+                        package_dicount_amount: package_dicount_amount,
+                        package_dicount_percent: package_dicount_percent,
+                        package_discountstart_date: package_discountstart_date,
+                        package_dicountend_date: package_dicountend_date,
+                        addonData: addOnData,
+                    },
+                    success: function(response) {
+                        // console.log(response);
+                        var booking_id = response.booking_id;
+                        if (response.status == 'success') {
+                            window.location.href =
+                                `https://www.thebingecity.com/congratulations?booking_id=${booking_id}`;
+                        } else {
+                            swal("!! sorry !! something went wrong",
+                                "Internal server error",
+                                "warning", {
+                                    dangerMode: true,
+                                    buttons: true,
+                                    closeOnClickOutside: false,
+                                    timer: 5000,
+                                });
+                        }
+                    }
+                });
+            } else {
+                $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    type: "post",
+                    url: "https://www.thebingecity.com/postCartData",
+                    data: {
+                        user_id: user_id,
+                        customerName: customerName,
+                        customerPhone: customerPhone,
+                        customerEmail: customerEmail,
+                        city_id: city_id,
+                        location_id: location_id,
+                        screen_id: screen_id,
+                        package_id: package_id,
+                        bookDate: bookDate,
+                        slot_id: slot_id,
+                        start_time: start_time,
+                        end_time: end_time,
+                        slot_amount: slot_amount,
+                        package_title: package_title,
+                        package_amount: package_amount,
+                        total_amount: total_amount,
+                        gst_amount: gst_amount,
+                        grand_amount: grand_amount,
+                        package_price: package_price,
+                        package_dicount_amount: package_dicount_amount,
+                        package_dicount_percent: package_dicount_percent,
+                        package_discountstart_date: package_discountstart_date,
+                        package_dicountend_date: package_dicountend_date,
+                        addonData: addOnData,
+                    },
+                    success: function(response) {
+                        // console.log(response);
+                        if (response.status == 'success') {
+                            window.location.href = "https://www.thebingecity.com/customer-login";
+                        }
+                    }
+                });
+                // window.location.href =    "https://www.thebingecity.com/customer-login";
+            }
+        });
+
+        // function for display data if already existed in user.
+        $("#confirmBooking").on('click', function() {
+            $.ajax({
+                type: "get",
+                url: "https://www.thebingecity.com/getCustomerData",
+                data: "data",
+                success: function(response) {
+                    // console.log(response);
+                    if (response.status == 404) {
+                        // open popup for popup
+                        $("#exampleModal").modal('show');
+                    } else {
+                        // console.log(response);
+                        $(".form-Div").empty();
+                        $(".form-Div").append(response);
+                        // open popup for popup
+                        $("#exampleModal").modal('show');
+                    }
+                }
+            });
+            // console.log(grand_amount);
+        });
+
+        calculateTotal();
+        $("#total_amount").val(t_amount);
+        $("#gst_amount").val(g_amount);
+        $("#grand_amount").val(gt_amount);
+    });
+
+
+
+
+    function Increament(value, key) {
+        var itemQty = value.value;
+        itemQty++;
+        value.value = itemQty;
+        addOnData[key].addOn_qty = itemQty;
+        addOnData[key].addOn_price = parseFloat(parseFloat(addOnData[key].addOn_price) + parseFloat(addOnData[key]
+            .addOn_unit_price));
+        t_amount = parseFloat(t_amount + parseFloat(addOnData[key].addOn_unit_price));
+        // alert(t_amount);
+        $("#total_amount").val(t_amount);
+        $("#gst_amount").val(g_amount);
+        $("#grand_amount").val(t_amount);
+        calculateTotal();
+        // console.log(addOnData[key].addOn_price);
+    }
+
+    function Decreament(value, key) {
+        var itemQty = value.value;
+        if (itemQty > 1) {
+            itemQty--;
+
+            value.value = itemQty;
+            addOnData[key].addOn_qty = itemQty;
+            addOnData[key].addOn_price = parseFloat(parseFloat(addOnData[key].addOn_price) - parseFloat(addOnData[key]
+                .addOn_unit_price));
+            t_amount = parseFloat(t_amount - parseFloat(addOnData[key].addOn_unit_price));
+            $("#total_amount").val(t_amount);
+            $("#gst_amount").val(g_amount);
+            $("#grand_amount").val(t_amount);
+            // alert(t_amount);
+        }
+        calculateTotal();
+    }
+
+    function onlyNumberKey(evt) {
+
+        // Only ASCII character in that range allowed
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+            return false;
+        return true;
+    }
+
+    function calculateTotal() {
+
+        var total_amount = 0;
+        var final_amount = 0;
+        var gst = 18;
+        var gstCal;
+        var gstAmount = 0;
+        var timeSlotAmount = 0;
+
+        var data = '';
+        var dataAddon = '';
+
+        // package details
+        // data += '<tr>';
+        // data += '<td>package</td>';
+        // data += '<td>' + pkg_title + '</td>';
+        // data += '<td></td>';
+        // data += '<td>' + pkg_price + '</td>'
+        // data += '<td>' + pkg_price + '</td>';
+        // data += '</tr>';
+
+        // time Slot Details
+        // data += '<tr>';
+        // data += '<td>Slot Amount</td>';
+        // data += '<td>' + "Slot Amount" + '</td>';
+        // data += '<td><strong>' + timeSlot_amount + '</strong></td>';
+        // data += '</tr>';
+        total_amount += Math.round(parseFloat(pkg_price) + parseFloat(timeSlot_amount));
+
+        // timeSlot Amount
+
+        //add ons data
+
+        if (addOnData.length > -1) {
+            for (var i = 0; i < addOnData.length; i++) {
+                data += '<tr>';
+                // data += '<td>Add-On</td>';
+                data += ' <td colspan="5" style="width:150px;"><p class="mb-0">' + addOnData[i].addOn_title +
+                    ' </p></td>';
+                data +=
+                    '<td colspan="2"> <div class="row justify-content-center"> <div class="col-lg-2 text-center p-0">  <button class="decreament add-rem-btn" onclick="Decreament(quantity' +
+                    i +
+                    ',' + i + ');"><i class="fal fa-trash-alt add-sub-size"></i></div></button>' +
+                    '<div class="col-lg-4 text-center p-0">   <input type="text" class="itemsQty numeric-input" value="' +
+                    addOnData[i].addOn_qty +
+                    '" name="quantity[]" id="quantity' + i +
+                    '" readonly/></div>' +
+                    '<div class="col-lg-2 text-center p-0">' +
+                    '<button class="add-rem-btn increament" onclick="Increament(quantity' + i +
+                    ',' + i + ');"><i class="fas fa-plus add-sub-size"></i></button> </div>' + '</div></td>';
+
+                // data += '<td>' + addOnData[i].addOn_unit_price + '</td>';
+                // data += '<td></td>';
+                // data += '<td></td>';
+                data += '<td colspan="2" ><div class="col-lg-2 col-4 text-end"><p class="fw-semibold mb-0">₹' +
+                    addOnData[i]
+                    .addOn_price + '</p></div></td>';
+                data += '</tr>';
+                total_amount += parseFloat(addOnData[i].addOn_price);
+
+                var imageUrl = "https://www.thebingecity.com" + "/storage/" + addOnData[i].addOn_image;
+
+                dataAddon += ' <div class="row product-bg mt-3 pb-20">';
+                dataAddon += '<div class="col-lg-9">';
+                dataAddon += '<div class="row">';
+                dataAddon += ' <h5 class="">' + addOnData[i].addOn_title + '</h5>';
+                dataAddon += ' <p class="">Quantity : ' + addOnData[i].addOn_qty + '</p>';
+                dataAddon += ' <h4 class="theme-font"> ₹' + addOnData[i].addOn_price + '</h4>';
+                dataAddon += '</div>'
+                dataAddon += '</div>';
+                dataAddon += '<div class="col-lg-3 col-md-4 col-sm-4 col-4 pr-0">';
+                dataAddon += '<div class="pckg-img text-center">';
+                dataAddon += '<img src="' + imageUrl + '">';
+                dataAddon += '</div>';
+                dataAddon += '</div>';
+                dataAddon += '</div>';
+
+
+            }
+        }
+
+
+
+
+        // var gstAmount = Math.round((gst * total_amount) / 100);
+        // final_amount = parseFloat(total_amount) + parseFloat(gstAmount);
+        final_amount = parseFloat(total_amount);
+
+        // total amount, gst Amount and final Amount
+        // data += '<tr>';
+        // data += '<td class="total" colspan="6">Total Amount</td>';
+        // data += '<td></td>';
+        // data += '<td></td>';
+        // data += '<td></td>'
+        // data += '<td colspan="4" style="text-align:end">₹' + total_amount + '</td>';
+        // data += '</tr>';
+
+        // data += '<tr>';
+        // data += '<td colspan="6">GST Amount</td>';
+        // data += '<td></td>';
+        // data += '<td></td>';
+        // data += '<td></td>'
+        // data += '<td colspan="4" style="text-align:end">₹' + gstAmount + '</td>';
+        // data += '</tr>';
+
+        data += '<tr>';
+        data += '<td colspan="6" class="finaal_amount">Final Amount</td>';
+        // data += '<td></td>';
+        // data += '<td></td>';
+        // data += '<td></td>'
+        data += '<td colspan="4" style="text-align:end" class="finaal_amount">₹' + final_amount + '</td>';
+        data += '</tr>';
+
+        $('#summaryBody').html("")
+        $('#summaryBody').append(data)
+        t_amount = total_amount;
+        g_amount = gstAmount;
+        gt_amount = final_amount;
+
+
+
+        // appending addon in list
+        $("#addonAdded").html("");
+        $("#addonAdded").append(dataAddon);
+
+    }
+</script>
+        <script>
+    $(document).ready(function() {
+
+        $(document).on('click', '.location-selector', function() {
+            // Get all child elements with the class "child"
+            const childElements = document.querySelectorAll('.location-image');
+
+            // Attach click event listeners to each child element
+            childElements.forEach(child => {
+                child.addEventListener('click', (event) => {
+                    const clickedElement = event.target;
+                    // Remove "selected" class from all child elements
+                    childElements.forEach(child => {
+                        child.classList.remove('active');
+                    });
+                    // Add "selected" class to the clicked child element
+                    child.classList.add('active');
+
+                    if (clickedElement.classList.contains('location-image')) {
+                        const dataValue = clickedElement.getAttribute('data-name');
+                        console.log('Clicked Item:', dataValue);
+                    }
+
+                });
+            });
+        });
+
+        $("#location_iddd").on('click', function() {
+            var location_idd = $("#location_idd").val();
+            $.ajax({
+                type: "get",
+                url: "https://www.thebingecity.com/getLocationsss",
+                data :{
+                    location_idd : location_idd
+                },
+                success: function (response) {
+                    // console.log(response);
+                    $("#locationDiv").empty();
+                    $("#locationDiv").append(response);
+                }
+            });
+            $("#locationModal").modal('show');
+        });
+    });
+</script>
+        
+    </section>
+
+
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+
+
+
+            <div class="col-lg-12 text-center my-1">
+                <img src="https://www.thebingecity.com/frontend/assets/image/home/white-logo.svg" class="footer-logo img-fluid"
+                    alt="">
+            </div>
+
+            <div class="row my-4">
+                <div class="col-lg-4 footer-item">
+                    <h4><i class="fas fa-map-pin"></i> The Binge City</h4>
+                    <p>
+                    The Binge City, 1st Floor, MG Road, above More Supermarket, Opp. to Bhagat
+                    Singh Food Court, Vidyanagar, Hassan, Karnataka 573201
+                    </p>
+                </div>
+                <div class="col-lg-4 footer-item">
+                    <h4><i class="far fa-phone-volume"></i> Contact Us</h4>
+                    <p>
+                        Call Us : <a href="tel:9632148246"> +91 9632148246</a>
+                    </p>
+                    <p>
+                        Whatsapp Us : <a target="_blank" href="https://api.whatsapp.com/send?phone=+919632148246&amp;text=Hi, I would like to discuss further on the services offered by your company. Kindly Connect - Thanks"> +91 9632148246</a>
+                    </p>
+
+                    
+                </div>
+                <div class="col-lg-4 footer-item">
+                    <h4>
+                    <i class="fal fa-clock"></i>    
+                    Working Hours</h4>
+                    <p>
+                        Mon-Fri: 09:00 AM to 10:00PM
+                    </p>
+                    <p>
+                        Sat-Sun: 09:00 AM to 10:00PM
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-lg-12 quick-link">
+            <ul>
+                <li><a href="https://www.thebingecity.com">Home</a></li>
+                <li><a href="https://www.thebingecity.com/book-now">Book Now</a></li>
+                <li><a href="https://www.thebingecity.com/gallaries">Gallery</a></li>
+                <!-- <li><a href="https://www.thebingecity.com/blogs">Blog</a></li> -->
+                <li><a href="https://www.thebingecity.com/faq">FAQ</a></li>
+                <li><a href="https://www.thebingecity.com/contact">Contact</a></li>
+                <li><a href="https://www.thebingecity.com/booking-policy">Booking Policy</a></li>
+                <li><a href="https://www.thebingecity.com/term&amp;condition">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+    </div>
+        <div class="container ">
+        <div class="row">
+            <div class="col-lg-6  pt-4">
+                <p class="text-light-gray">© 2024 The Binge City | All rights reserved</p>
+            </div>
+            <div class="col-lg-6 my-auto">
+                <div class="social-media">
+                    <a href="https://instagram.com/thebingecity?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" crossorigin="anonymous"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {});
+    </script>
+
+
+
+    <script>
+        new WOW().init(
+
+        );
+    </script>
+
+    <script>
+        const navbarMenu = document.getElementById("navbar");
+        const burgerMenu = document.getElementById("burger");
+        const overlayMenu = document.querySelector(".overlay");
+
+        // Show and Hide Navbar Function
+        const toggleMenu = () => {
+            navbarMenu.classList.toggle("active");
+            overlayMenu.classList.toggle("active");
+        };
+
+        // Collapsible Mobile Submenu Function
+        const collapseSubMenu = () => {
+            navbarMenu
+                .querySelector(".menu-dropdown.active .submenu")
+                .removeAttribute("style");
+            navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+        };
+
+        // Toggle Mobile Submenu Function
+        const toggleSubMenu = (e) => {
+            if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+                e.preventDefault();
+                const menuDropdown = e.target.parentElement;
+
+                // If Dropdown is Expanded, then Collapse It
+                if (menuDropdown.classList.contains("active")) {
+                    collapseSubMenu();
+                } else {
+                    // Collapse Existing Expanded Dropdown
+                    if (navbarMenu.querySelector(".menu-dropdown.active")) {
+                        collapseSubMenu();
+                    }
+
+                    // Expanded the New Dropdown
+                    menuDropdown.classList.add("active");
+                    const subMenu = menuDropdown.querySelector(".submenu");
+                    subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+                }
+            }
+        };
+
+        // Fixed Resize Window Function
+        const resizeWindow = () => {
+            if (window.innerWidth > 992) {
+                if (navbarMenu.classList.contains("active")) {
+                    toggleMenu();
+                }
+                if (navbarMenu.querySelector(".menu-dropdown.active")) {
+                    collapseSubMenu();
+                }
+            }
+        };
+
+        // Initialize Event Listeners
+        burgerMenu.addEventListener("click", toggleMenu);
+        overlayMenu.addEventListener("click", toggleMenu);
+        navbarMenu.addEventListener("click", toggleSubMenu);
+        window.addEventListener("resize", resizeWindow);
+    </script>
+
+    <script>
+        const header = document.querySelector(".page-header");
+        const toggleClass = "is-sticky";
+
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > 100) {
+                header.classList.add(toggleClass);
+            } else {
+                header.classList.remove(toggleClass);
+            }
+        });
+    </script>
+
+
+    <script>
+        $('#banner')
+            .owlCarousel({
+                loop: true,
+                margin: 50,
+                nav: true,
+                dots: false,
+                autoplay: 3000,
+                smartSpeed: 700,
+                navText: ["<div class='nav-btn prev-slide'><i class='fas fa-chevron-left'></i></div>",
+                    "<div class='nav-btn next-slide'><i class='fas fa-chevron-right'></i></div>"
+                ],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    768: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+    </script>
+
+    <script>
+        $('.testimonial-slide')
+
+            .owlCarousel({
+                loop: false,
+                margin: 50,
+                nav: true,
+                dots: false,
+                autoplay: 3000,
+                smartSpeed: 700,
+                navText: ["<div class='nav-btn prev-slide'><i class='fas fa-chevron-left'></i></div>",
+                    "<div class='nav-btn next-slide'><i class='fas fa-chevron-right'></i></div>"
+                ],
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 2
+                    },
+                    768: {
+                        items: 4
+                    },
+                    1000: {
+                        items: 6
+                    }
+                }
+            });
+    </script>
+
+    
+    <script>
+        
+        
+        
+            </script>
+
+    <script>
+        $("#cities").on('change', function() {
+            console.log('city', this.value);
+            var city_id = this.value;
+            window.location.href = "https://www.thebingecity.com" + '/book-now/' +
+                "?city_id=" + city_id;
+
+            localStorage.setItem('city_id', city_id);
+        });
+    </script>
+
+    <script>
+        $('.testimonial-slide-1')
+            .owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                dots: true,
+                autoplay: 3000,
+                smartSpeed: 700,
+                navText: ["<div class='nav-btn prev-slide'><i class='fas fa-chevron-left'></i></div>",
+                    "<div class='nav-btn next-slide'><i class='fas fa-chevron-right'></i></div>"
+                ],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+    </script>
+
+    </body>
+
+</html>
