@@ -1,6 +1,50 @@
 # tastexplorer
 Developed an interactive restaurant finder website using HTML, CSS,  JavaScript, and PHP. Integrated Google Maps API for location and  review features.</br></br>
 Home page</br></br>
+Taste Explorer
+Description
+Taste Explorer is a web application that helps users discover new and exciting flavors. It leverages a variety of front-end technologies to provide an interactive and engaging user experience.
+
+Installation
+Prerequisites
+Ensure you have the following software installed on your system:
+
+Node.js (which includes npm)
+Steps
+Download the Project
+
+Download the project zip file and extract it.
+Navigate to the Project Directory
+
+bash
+Copy code
+cd path/to/taste_explorer/tast_expo
+Install Dependencies
+
+If your project has a package.json file, run the following command to install the necessary dependencies:
+bash
+Copy code
+npm install
+Run the Application
+
+Start a local server using a tool like http-server:
+bash
+Copy code
+npx http-server ./
+Open your browser and navigate to http://localhost:8080 (or the port specified by your server).
+Usage
+Open your browser and go to http://localhost:8080.
+Explore the features of the Taste Explorer application.
+Contributing
+If you'd like to contribute to this project, please fork the repository and use a feature branch. Pull requests are welcome.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Contact
+For any questions or feedback, please contact [Your Name] at [your.email@example.com].
+
+
 ![Screenshot (3)](https://github.com/user-attachments/assets/333de1af-c897-4e2a-9c21-35a0ad76d2bd)
 ![Screenshot (4)](https://github.com/user-attachments/assets/35d3b121-ab4f-43cf-83c6-60ee7a6df8d3)
 ![Screenshot (5)](https://github.com/user-attachments/assets/f7df0d63-d105-4f67-b12a-a9b61b4f3354)
