@@ -38,12 +38,7 @@ Explore the features of the Taste Explorer application.
 Contributing
 If you'd like to contribute to this project, please fork the repository and use a feature branch. Pull requests are welcome.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Contact
-For any questions or feedback, please contact [Your Name] at [your.email@example.com].
-
+screenshots
 
 ![Screenshot (3)](https://github.com/user-attachments/assets/333de1af-c897-4e2a-9c21-35a0ad76d2bd)
 ![Screenshot (4)](https://github.com/user-attachments/assets/35d3b121-ab4f-43cf-83c6-60ee7a6df8d3)
